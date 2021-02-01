@@ -1,0 +1,31 @@
+{
+        "folders": [
+                {
+                        "path": "src/prolog"
+                },
+                {
+                        "path": "src/frames"
+                },
+                {
+                        "path": "src/KBS"
+                },
+                {
+                        "path": "src/GUI"
+                },
+                 {
+                        "path": "src/ML"
+                },
+               {
+                        "path": "src/ILP"
+                },
+                {
+                        "path": "src/Probot"
+                },
+                {
+                        "path": "src/image"
+                },
+                {
+                        "path": "examples"
+                }
+       ]
+}

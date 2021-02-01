@@ -1,0 +1,164 @@
+load "rules.pro"!
+
+% invoke program by calling "run!" defined in rules.pro
+% The result is stored in the predicate "bag".
+
+dynamic(in_freezer_bag/1, stop/0, step/1, unpacked/1)!
+
+% conflict resolution in rules interpreter doesn't use recency, so the book keeping
+% stuff is done in Prolog to ensure it happens immediately.
+
+add_item(Bag, Item) :-
+	retract(unpacked(Item)),
+	assert(bag(Bag, Item)),
+	size(Item, Size),
+	retract(bag_count(Bag, Size, N)),
+	N1 is N + 1,
+	assert(bag_count(Bag, Size, N1)).
+
+new_bag(N) :-
+	assert(bag(N)),
+	assert(bag_count(N, large, 0)),
+	assert(bag_count(N, medium, 0)),
+	assert(bag_count(N, small, 0)).
+
+container(chips, plastic_bag).
+container(bread, plastic_bag).
+container(granola, cardboard_box).
+container(glob, jar).
+container(ice_cream, cardboard_carton).
+container(pepsi, bottle).
+
+size(chips, medium).
+size(bread, medium).
+size(granola, large).
+size(glop, small).
+size(ice_cream, medium).
+size(pepsi, large).
+
+frozen(chips, no).
+frozen(bread, no).
+frozen(granola, no).
+frozen(glob, no).
+frozen(ice_cream, yes).
+frozen(pepsi, no).
+
+unpacked(bread).
+unpacked(glop).
+unpacked(granola).
+unpacked(granola).
+unpacked(ice_cream).
+unpacked(chips).
+
+step(check_order).
+new_bag(1)!
+
+% This is the main set of rules for packing items, starting with large items.
+
+add_pepsi rule
+if	step(check_order)
+and	unpacked(chips)
+and	not(unpacked(pepsi))
+then	assert(unpacked(pepsi)).
+
+start_packing_large_items rule
+if	step(check_order)
+then	retract(step(check_order))
+and	assert(step(pack_large_items)).
+
+pack_bottle rule
+if	step(pack_large_items)
+and	unpacked(Item1)
+and	size(Item1, large)
+and	unpacked(Item2)
+and	container(Item2, bottle)
+and	size(Item2, large)
+and	bag_count(Bag, large, N)
+and	N < 6
+then	add_item(Bag, Item2).
+
+pack_large_item rule
+if	step(pack_large_items)
+and	unpacked(Item)
+and	size(Item, large)
+and	bag_count(Bag, large, N)
+and	N < 6
+then	add_item(Bag, Item).
+
+new_bag_for_large_items rule
+if	step(pack_large_items)
+and	unpacked(Item)
+and	size(Item, large)
+and	bag(CurrentBag)
+then	retract(bag(CurrentBag))
+and	NewBagCount is CurrentBag + 1
+and	new_bag(NewBagCount).
+
+start_packing_medium_items rule
+if	step(pack_large_items)
+then	retract(step(pack_large_items))
+and	assert(step(pack_medium_items)).
+
+% Pack medium items after the large ones.
+
+pack_frozen_medium_item rule
+if	step(pack_medium_items)
+and	unpacked(Item)
+and	size(Item, medium)
+and	bag_count(Bag, small, 0)
+and	bag_count(Bag, large, 0)
+and	frozen(Item, yes)
+and	not(in_freezer_bag(Item))
+then	assert(in_freezer_bag(Item)).
+
+pack_medium_item rule
+if	step(pack_medium_items)
+and	unpacked(Item)
+and	size(Item, medium)
+and	bag_count(Bag, small, 0)
+and	bag_count(Bag, large, 0)
+then	add_item(Bag, Item).
+
+new_bag_for_medium_items rule
+if	step(pack_medium_items)
+and	unpacked(Item)
+and	size(Item, medium)
+and	bag(CurrentBag)
+then	retract(bag(CurrentBag))
+and	NewBagCount is CurrentBag + 1
+and	new_bag(NewBagCount).
+
+start_packing_small_items rule
+if	step(pack_medium_items)
+then	retract(step(pack_medium_items))
+and	assert(step(pack_small_items)).
+
+% Finish packing the small items
+
+pack_small_item_separate_from_large_item rule
+if	step(pack_small_items)
+and	unpacked(Item)
+and	size(Item, small)
+and	bag_count(Bag, large, 0)
+then	add_item(Bag, Item).
+
+pack_small_item rule
+if	step(pack_small_items)
+and	unpacked(Item)
+and	size(Item, small)
+and	bag_count(Bag, _, _)
+then	add_item(Bag, Item).
+
+new_bag_for_small_items rule
+if	step(pack_small_items)
+and	unpacked(Item)
+and	size(Item, small)
+and	bag(CurrentBag)
+then	retract(bag(CurrentBag))
+and	NewBagCount is CurrentBag + 1
+and	new_bag(NewBagCount).
+
+finish rule
+if	step(pack_small_items)
+then	retract(step(pack_small_items))
+and	stop.

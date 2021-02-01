@@ -1,0 +1,2263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="90">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <df root="." name="0">
+      <df name="GUI">
+        <in>face.c</in>
+        <in>fbrowser_cb.c</in>
+        <in>generic.c</in>
+        <in>generic.h</in>
+        <in>gui.c</in>
+        <in>instance_display.c</in>
+        <in>instance_display.h</in>
+        <in>rdr_GUI.c</in>
+        <in>rdr_GUI.h</in>
+        <in>rdr_cb.c</in>
+        <in>xforms_io.c</in>
+        <in>xforms_io.h</in>
+        <in>xmessage.c</in>
+      </df>
+      <df name="ILP">
+        <in>clause_diff.c</in>
+        <in>golem.c</in>
+        <in>ilp.c</in>
+        <in>lgg.c</in>
+        <in>lgg.h</in>
+        <in>progol.c</in>
+        <in>refine.c</in>
+        <in>refine.h</in>
+      </df>
+      <df name="image">
+        <in>bfl.c</in>
+        <in>bfl.h</in>
+        <in>blob.c</in>
+        <in>blob.h</in>
+        <in>edge.c</in>
+        <in>edge.h</in>
+        <in>p_image.c</in>
+        <in>p_image.h</in>
+        <in>p_pbm.c</in>
+        <in>p_pbm.h</in>
+        <in>p_pgm.c</in>
+        <in>p_pgm.h</in>
+        <in>p_ppm.c</in>
+        <in>p_ppm.h</in>
+        <in>skeleton.c</in>
+        <in>skeleton.h</in>
+        <in>trace.c</in>
+        <in>trace.h</in>
+        <in>version.c</in>
+      </df>
+      <df name="KBS">
+        <in>db.c</in>
+        <in>frame.c</in>
+        <in>frame.h</in>
+        <in>frame.old.c</in>
+        <in>kbs.c</in>
+        <in>print_rule.c</in>
+        <in>print_rule.h</in>
+        <in>rdr.c</in>
+        <in>rdr.h</in>
+        <in>rdr_fn.c</in>
+        <in>rdr_plist.c</in>
+        <in>rdr_plist.h</in>
+      </df>
+      <df name="ML">
+        <in>aq.c</in>
+        <in>aq.h</in>
+        <in>array.c</in>
+        <in>array.h</in>
+        <in>atms.c</in>
+        <in>attr_info.c</in>
+        <in>attr_info.h</in>
+        <in>bp.c</in>
+        <in>discrim.c</in>
+        <in>duce.c</in>
+        <in>hash.c</in>
+        <in>hash.h</in>
+        <in>heap.c</in>
+        <in>heap.h</in>
+        <in>id.c</in>
+        <in>induct.c</in>
+        <in>line.c</in>
+        <in>ml.c</in>
+        <in>mreg.c</in>
+        <in>rt.c</in>
+        <in>scw.c</in>
+        <in>set.c</in>
+        <in>set.h</in>
+      </df>
+      <df name="Probot">
+        <in>convagent.c</in>
+        <in>probot.c</in>
+        <in>probot.h</in>
+        <in>rdr_chat.c</in>
+        <in>read_script.c</in>
+        <in>read_script.h</in>
+      </df>
+      <df name="prolog">
+        <in>IPinterface.c</in>
+        <in>IPinterface.h</in>
+        <in>atom.c</in>
+        <in>atom.h</in>
+        <in>chartype.c</in>
+        <in>dcg.c</in>
+        <in>dcg.h</in>
+        <in>eval.c</in>
+        <in>eval.h</in>
+        <in>evloop.c</in>
+        <in>evloop.h</in>
+        <in>files.c</in>
+        <in>files.h</in>
+        <in>lex.c</in>
+        <in>lex.h</in>
+        <in>main.c</in>
+        <in>make.c</in>
+        <in>make.h</in>
+        <in>mem.c</in>
+        <in>mem.h</in>
+        <in>out.c</in>
+        <in>out.h</in>
+        <in>p_compare.c</in>
+        <in>p_compare.h</in>
+        <in>p_db.c</in>
+        <in>p_db.h</in>
+        <in>p_lists.c</in>
+        <in>p_lists.h</in>
+        <in>p_math.c</in>
+        <in>p_math.h</in>
+        <in>p_meta.c</in>
+        <in>p_sockets.c</in>
+        <in>p_sockets.h</in>
+        <in>p_system.c</in>
+        <in>p_system.h</in>
+        <in>p_unix.c</in>
+        <in>p_unix.h</in>
+        <in>plist.c</in>
+        <in>plist.h</in>
+        <in>pred.c</in>
+        <in>pred.h</in>
+        <in>prolog.h</in>
+        <in>prove.c</in>
+        <in>prove.h</in>
+        <in>read.c</in>
+        <in>read.h</in>
+        <in>string_io.c</in>
+        <in>string_io.h</in>
+        <in>unify.c</in>
+        <in>unify.h</in>
+        <in>version.c</in>
+      </df>
+    </df>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   root="../examples">
+      <itemPath>../examples/ATMS_example.pro</itemPath>
+      <itemPath>Makefile-src.mk</itemPath>
+      <itemPath>../examples/appt.plist</itemPath>
+      <itemPath>../examples/aq_animals.pro</itemPath>
+      <itemPath>../examples/aq_chinese_char_ex.pro</itemPath>
+      <itemPath>../examples/bagger.pro</itemPath>
+      <itemPath>../examples/bagger1.rules</itemPath>
+      <itemPath>../examples/bagger2.rules</itemPath>
+      <itemPath>../examples/bp_xor.pro</itemPath>
+      <itemPath>../examples/cal.plist</itemPath>
+      <itemPath>../examples/cat.pro</itemPath>
+      <itemPath>../examples/compsoc.pro</itemPath>
+      <itemPath>../examples/dcg_example1.pro</itemPath>
+      <itemPath>../examples/dcg_example2.pro</itemPath>
+      <itemPath>../examples/dept.pro</itemPath>
+      <itemPath>../examples/diff.pro</itemPath>
+      <itemPath>../examples/duce_abduction.pro</itemPath>
+      <itemPath>../examples/duce_boxes.pro</itemPath>
+      <itemPath>../examples/duce_example.pro</itemPath>
+      <itemPath>../examples/elevator.golog</itemPath>
+      <itemPath>../examples/frames_cylinder.pro</itemPath>
+      <itemPath>../examples/frames_patient.pro</itemPath>
+      <itemPath>../examples/frames_prolog_implementation.pro</itemPath>
+      <itemPath>../examples/frames_prolog_implementation_example.pro</itemPath>
+      <itemPath>../examples/frames_pump.pro</itemPath>
+      <itemPath>../examples/golog.pro</itemPath>
+      <itemPath>../examples/gvl.pro</itemPath>
+      <itemPath>../examples/id_bayes_ex1.pro</itemPath>
+      <itemPath>../examples/id_bayes_ex2.pro</itemPath>
+      <itemPath>../examples/id_boxes_example.pro</itemPath>
+      <itemPath>../examples/ilp_saturation_example.pro</itemPath>
+      <itemPath>../examples/lgg.pro</itemPath>
+      <itemPath>../examples/linear_discriminant _heart_data.pro</itemPath>
+      <itemPath>../examples/linear_discriminant_heart_data_example.pro</itemPath>
+      <itemPath>/Users/claude/Projects/NetBeansProjects/iProlog/src/makefile</itemPath>
+      <itemPath>../examples/mandc.pro</itemPath>
+      <itemPath>../examples/marvin.pro</itemPath>
+      <itemPath>../examples/merge.pro</itemPath>
+      <itemPath>../examples/ml_character_recognition.pro</itemPath>
+      <itemPath>../examples/ml_character_recognition_full_data_set.pro</itemPath>
+      <itemPath>../examples/ml_character_recognition_test_set.pro</itemPath>
+      <itemPath>../examples/ml_character_recognition_training_set.pro</itemPath>
+      <itemPath>../examples/ml_lens_examples.pro</itemPath>
+      <itemPath>../examples/progol_example.pro</itemPath>
+      <itemPath>../examples/prosp.pro</itemPath>
+      <itemPath>../examples/qbench.pro</itemPath>
+      <itemPath>../examples/queens.pro</itemPath>
+      <itemPath>../examples/rdr_fn_lens.pro</itemPath>
+      <itemPath>../examples/rdr_fn_lens.trace</itemPath>
+      <itemPath>../examples/rdr_frames_lens.pro</itemPath>
+      <itemPath>../examples/rdr_lens_input.txt</itemPath>
+      <itemPath>../examples/refinement_keys_example.pro</itemPath>
+      <itemPath>../examples/rev.pro</itemPath>
+      <itemPath>../examples/rt_example.pro</itemPath>
+      <itemPath>../examples/rt_pitch.pro</itemPath>
+      <itemPath>../examples/rule_test.rules</itemPath>
+      <itemPath>../examples/rules.pro</itemPath>
+      <itemPath>../examples/saturation</itemPath>
+      <itemPath>../examples/scw_example.pro</itemPath>
+      <itemPath>../examples/small_pitch.rt</itemPath>
+      <itemPath>../examples/tennis_data.pro</itemPath>
+      <itemPath>../examples/test.pgm</itemPath>
+      <itemPath>../examples/text</itemPath>
+      <itemPath>../examples/top_planner.pro</itemPath>
+      <itemPath>../examples/warplan.pro</itemPath>
+      <itemPath>../examples/warplan_robot.pro</itemPath>
+      <itemPath>../examples/water_pump.rules</itemPath>
+      <itemPath>../examples/worlds.pro</itemPath>
+      <itemPath>../examples/xray.pro</itemPath>
+      <itemPath>../examples/zebra.pro</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <sourceRootList>
+    <Elem>.</Elem>
+  </sourceRootList>
+  <projectmakefile>Makefile-src.mk</projectmakefile>
+  <confs>
+    <conf name="Default" type="0">
+      <toolsSet>
+        <compilerSet>GNU|GNU</compilerSet>
+        <dependencyChecking>false</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <codeAssistance>
+      </codeAssistance>
+      <makefileType>
+        <makeTool>
+          <buildCommandWorkingDir>/Users/claude/Projects/NetBeansProjects/iProlog/src</buildCommandWorkingDir>
+          <buildCommand>${MAKE} -f Makefile</buildCommand>
+          <cleanCommand>${MAKE} -f Makefile clean</cleanCommand>
+          <executablePath>../bin/prolog</executablePath>
+        </makeTool>
+      </makefileType>
+      <item path="GUI/face.c" ex="false" tool="0" flavor2="2">
+        <cTool>
+          <incDir>
+            <pElem>prolog</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="GUI/fbrowser_cb.c" ex="false" tool="0" flavor2="2">
+        <cTool>
+          <incDir>
+            <pElem>prolog</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="GUI/generic.c" ex="false" tool="0" flavor2="2">
+        <cTool>
+        </cTool>
+      </item>
+      <item path="GUI/generic.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="GUI/gui.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="GUI/instance_display.c" ex="false" tool="0" flavor2="2">
+        <cTool>
+          <incDir>
+            <pElem>prolog</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="GUI/instance_display.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="GUI/rdr_GUI.c" ex="false" tool="0" flavor2="2">
+        <cTool>
+        </cTool>
+      </item>
+      <item path="GUI/rdr_GUI.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="GUI/rdr_cb.c" ex="false" tool="0" flavor2="2">
+        <cTool>
+          <incDir>
+            <pElem>prolog</pElem>
+            <pElem>KBS</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="GUI/xforms_io.c" ex="false" tool="0" flavor2="2">
+        <cTool>
+          <incDir>
+            <pElem>prolog</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="GUI/xforms_io.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="GUI/xmessage.c" ex="false" tool="0" flavor2="2">
+        <cTool>
+          <incDir>
+            <pElem>prolog</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="ILP/clause_diff.c" ex="false" tool="0" flavor2="2">
+        <cTool>
+          <incDir>
+            <pElem>prolog</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="ILP/golem.c" ex="false" tool="0" flavor2="2">
+        <cTool>
+          <incDir>
+            <pElem>prolog</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="ILP/ilp.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="ILP/lgg.c" ex="false" tool="0" flavor2="2">
+        <cTool>
+          <incDir>
+            <pElem>prolog</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="ILP/lgg.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="ILP/progol.c" ex="false" tool="0" flavor2="2">
+        <cTool>
+          <incDir>
+            <pElem>prolog</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="ILP/refine.c" ex="false" tool="0" flavor2="2">
+        <cTool>
+          <incDir>
+            <pElem>prolog</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="ILP/refine.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="KBS/db.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="KBS/frame.c" ex="false" tool="0" flavor2="2">
+        <cTool>
+          <incDir>
+            <pElem>prolog</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="KBS/frame.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="KBS/frame.old.c" ex="false" tool="0" flavor2="2">
+        <cTool>
+        </cTool>
+      </item>
+      <item path="KBS/kbs.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="KBS/print_rule.c" ex="false" tool="0" flavor2="2">
+        <cTool>
+          <incDir>
+            <pElem>prolog</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="KBS/print_rule.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="KBS/rdr.c" ex="false" tool="0" flavor2="2">
+        <cTool>
+          <incDir>
+            <pElem>prolog</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="KBS/rdr.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="KBS/rdr_fn.c" ex="false" tool="0" flavor2="2">
+        <cTool>
+          <incDir>
+            <pElem>prolog</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="KBS/rdr_plist.c" ex="false" tool="0" flavor2="2">
+        <cTool>
+          <incDir>
+            <pElem>prolog</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="KBS/rdr_plist.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="ML/aq.c" ex="false" tool="0" flavor2="2">
+        <cTool>
+          <incDir>
+            <pElem>prolog</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="ML/aq.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="ML/array.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="ML/array.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="ML/atms.c" ex="false" tool="0" flavor2="2">
+        <cTool>
+          <incDir>
+            <pElem>prolog</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="ML/attr_info.c" ex="false" tool="0" flavor2="2">
+        <cTool>
+          <incDir>
+            <pElem>prolog</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="ML/attr_info.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="ML/bp.c" ex="false" tool="0" flavor2="2">
+        <cTool>
+          <incDir>
+            <pElem>prolog</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="ML/discrim.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="ML/duce.c" ex="false" tool="0" flavor2="2">
+        <cTool>
+          <incDir>
+            <pElem>prolog</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="ML/hash.c" ex="false" tool="0" flavor2="2">
+        <cTool>
+          <incDir>
+            <pElem>prolog</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="ML/hash.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="ML/heap.c" ex="false" tool="0" flavor2="2">
+        <cTool>
+          <incDir>
+            <pElem>prolog</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="ML/heap.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="ML/id.c" ex="false" tool="0" flavor2="2">
+        <cTool>
+          <incDir>
+            <pElem>prolog</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="ML/induct.c" ex="false" tool="0" flavor2="2">
+        <cTool>
+          <incDir>
+            <pElem>prolog</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="ML/line.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="ML/ml.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="ML/mreg.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="ML/rt.c" ex="false" tool="0" flavor2="2">
+        <cTool>
+          <incDir>
+            <pElem>prolog</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="ML/scw.c" ex="false" tool="0" flavor2="2">
+        <cTool>
+          <incDir>
+            <pElem>prolog</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="ML/set.c" ex="false" tool="0" flavor2="2">
+        <cTool>
+          <incDir>
+            <pElem>prolog</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="ML/set.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Probot/convagent.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="Probot/probot.c" ex="false" tool="0" flavor2="2">
+        <cTool>
+          <incDir>
+            <pElem>prolog</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="Probot/probot.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Probot/rdr_chat.c" ex="false" tool="0" flavor2="2">
+        <cTool>
+          <incDir>
+            <pElem>prolog</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="Probot/read_script.c" ex="false" tool="0" flavor2="2">
+        <cTool>
+          <incDir>
+            <pElem>prolog</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="Probot/read_script.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <folder path="0/GUI">
+        <cTool>
+          <incDir>
+            <pElem>GUI</pElem>
+            <pElem>/opt/local/include</pElem>
+            <pElem>Probot</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/ILP">
+        <cTool>
+          <incDir>
+            <pElem>ILP</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/KBS">
+        <cTool>
+          <incDir>
+            <pElem>KBS</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/ML">
+        <cTool>
+          <incDir>
+            <pElem>ML</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/Probot">
+        <cTool>
+          <incDir>
+            <pElem>KBS</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/image">
+        <cTool>
+          <incDir>
+            <pElem>image</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/prolog">
+        <cTool>
+          <incDir>
+            <pElem>prolog</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <item path="image/bfl.c" ex="false" tool="0" flavor2="2">
+        <cTool>
+          <incDir>
+            <pElem>/opt/local/include</pElem>
+            <pElem>prolog</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="image/bfl.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="image/blob.c" ex="false" tool="0" flavor2="2">
+        <cTool>
+          <incDir>
+            <pElem>/opt/local/include</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="image/blob.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="image/edge.c" ex="false" tool="0" flavor2="2">
+        <cTool>
+          <incDir>
+            <pElem>/opt/local/include</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="image/edge.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="image/p_image.c" ex="false" tool="0" flavor2="2">
+        <cTool>
+          <incDir>
+            <pElem>prolog</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="image/p_image.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="image/p_pbm.c" ex="false" tool="0" flavor2="2">
+        <cTool>
+          <incDir>
+            <pElem>/opt/local/include</pElem>
+            <pElem>prolog</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="image/p_pbm.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="image/p_pgm.c" ex="false" tool="0" flavor2="2">
+        <cTool>
+          <incDir>
+            <pElem>/opt/local/include</pElem>
+            <pElem>prolog</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="image/p_pgm.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="image/p_ppm.c" ex="false" tool="0" flavor2="2">
+        <cTool>
+          <incDir>
+            <pElem>/opt/local/include</pElem>
+            <pElem>prolog</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="image/p_ppm.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="image/skeleton.c" ex="false" tool="0" flavor2="2">
+        <cTool>
+          <incDir>
+            <pElem>/opt/local/include</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="image/skeleton.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="image/trace.c" ex="false" tool="0" flavor2="2">
+        <cTool>
+          <incDir>
+            <pElem>/opt/local/include</pElem>
+            <pElem>prolog</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="image/trace.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="image/version.c" ex="false" tool="0" flavor2="2">
+        <cTool>
+        </cTool>
+      </item>
+      <item path="prolog/IPinterface.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="prolog/IPinterface.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="prolog/atom.c" ex="false" tool="0" flavor2="2">
+        <cTool>
+        </cTool>
+      </item>
+      <item path="prolog/atom.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="prolog/chartype.c" ex="false" tool="0" flavor2="2">
+        <cTool>
+        </cTool>
+      </item>
+      <item path="prolog/dcg.c" ex="false" tool="0" flavor2="2">
+        <cTool>
+        </cTool>
+      </item>
+      <item path="prolog/dcg.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="prolog/eval.c" ex="false" tool="0" flavor2="2">
+        <cTool>
+        </cTool>
+      </item>
+      <item path="prolog/eval.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="prolog/evloop.c" ex="false" tool="0" flavor2="2">
+        <cTool>
+        </cTool>
+      </item>
+      <item path="prolog/evloop.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="prolog/files.c" ex="false" tool="0" flavor2="2">
+        <cTool>
+        </cTool>
+      </item>
+      <item path="prolog/files.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="prolog/lex.c" ex="false" tool="0" flavor2="2">
+        <cTool>
+        </cTool>
+      </item>
+      <item path="prolog/lex.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="prolog/main.c" ex="false" tool="0" flavor2="2">
+        <cTool>
+        </cTool>
+      </item>
+      <item path="prolog/make.c" ex="false" tool="0" flavor2="2">
+        <cTool>
+        </cTool>
+      </item>
+      <item path="prolog/make.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="prolog/mem.c" ex="false" tool="0" flavor2="2">
+        <cTool>
+        </cTool>
+      </item>
+      <item path="prolog/mem.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="prolog/out.c" ex="false" tool="0" flavor2="2">
+        <cTool>
+        </cTool>
+      </item>
+      <item path="prolog/out.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="prolog/p_compare.c" ex="false" tool="0" flavor2="2">
+        <cTool>
+        </cTool>
+      </item>
+      <item path="prolog/p_compare.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="prolog/p_db.c" ex="false" tool="0" flavor2="2">
+        <cTool>
+        </cTool>
+      </item>
+      <item path="prolog/p_db.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="prolog/p_lists.c" ex="false" tool="0" flavor2="2">
+        <cTool>
+        </cTool>
+      </item>
+      <item path="prolog/p_lists.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="prolog/p_math.c" ex="false" tool="0" flavor2="2">
+        <cTool>
+        </cTool>
+      </item>
+      <item path="prolog/p_math.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="prolog/p_meta.c" ex="false" tool="0" flavor2="2">
+        <cTool>
+        </cTool>
+      </item>
+      <item path="prolog/p_sockets.c" ex="false" tool="0" flavor2="2">
+        <cTool>
+        </cTool>
+      </item>
+      <item path="prolog/p_sockets.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="prolog/p_system.c" ex="false" tool="0" flavor2="2">
+        <cTool>
+        </cTool>
+      </item>
+      <item path="prolog/p_system.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="prolog/p_unix.c" ex="false" tool="0" flavor2="2">
+        <cTool>
+        </cTool>
+      </item>
+      <item path="prolog/p_unix.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="prolog/plist.c" ex="false" tool="0" flavor2="2">
+        <cTool>
+        </cTool>
+      </item>
+      <item path="prolog/plist.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="prolog/pred.c" ex="false" tool="0" flavor2="2">
+        <cTool>
+        </cTool>
+      </item>
+      <item path="prolog/pred.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="prolog/prolog.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="prolog/prove.c" ex="false" tool="0" flavor2="2">
+        <cTool>
+        </cTool>
+      </item>
+      <item path="prolog/prove.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="prolog/read.c" ex="false" tool="0" flavor2="2">
+        <cTool>
+        </cTool>
+      </item>
+      <item path="prolog/read.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="prolog/string_io.c" ex="false" tool="0" flavor2="2">
+        <cTool>
+        </cTool>
+      </item>
+      <item path="prolog/string_io.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="prolog/unify.c" ex="false" tool="0" flavor2="2">
+        <cTool>
+        </cTool>
+      </item>
+      <item path="prolog/unify.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="prolog/version.c" ex="false" tool="0" flavor2="2">
+        <cTool>
+        </cTool>
+      </item>
+    </conf>
+    <conf name="Cylinder" type="0">
+      <toolsSet>
+        <compilerSet>GNU|GNU</compilerSet>
+        <dependencyChecking>false</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <codeAssistance>
+      </codeAssistance>
+      <makefileType>
+        <makeTool>
+          <buildCommandWorkingDir>/Users/claude/Projects/NetBeansProjects/iProlog/src</buildCommandWorkingDir>
+          <buildCommand>${MAKE} -f Makefile</buildCommand>
+          <cleanCommand>${MAKE} -f Makefile clean</cleanCommand>
+          <executablePath>../bin/prolog</executablePath>
+        </makeTool>
+      </makefileType>
+      <item path="GUI/face.c" ex="false" tool="0" flavor2="0">
+        <cTool>
+          <incDir>
+            <pElem>prolog</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="GUI/fbrowser_cb.c" ex="false" tool="0" flavor2="0">
+        <cTool>
+          <incDir>
+            <pElem>prolog</pElem>
+            <pElem>/opt/local/include</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="GUI/generic.c" ex="false" tool="0" flavor2="0">
+        <cTool>
+          <incDir>
+            <pElem>/opt/local/include</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="GUI/generic.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="GUI/gui.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="GUI/instance_display.c" ex="false" tool="0" flavor2="0">
+        <cTool>
+          <incDir>
+            <pElem>prolog</pElem>
+            <pElem>/opt/local/include</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="GUI/rdr_GUI.c" ex="false" tool="0" flavor2="0">
+        <cTool>
+          <incDir>
+            <pElem>/opt/local/include</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="GUI/rdr_GUI.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="GUI/rdr_cb.c" ex="false" tool="0" flavor2="0">
+        <cTool>
+          <incDir>
+            <pElem>KBS</pElem>
+            <pElem>prolog</pElem>
+            <pElem>/opt/local/include</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="GUI/xforms_io.c" ex="false" tool="0" flavor2="0">
+        <cTool>
+          <incDir>
+            <pElem>prolog</pElem>
+            <pElem>/opt/local/include</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="GUI/xmessage.c" ex="false" tool="0" flavor2="0">
+        <cTool>
+          <incDir>
+            <pElem>prolog</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="ILP/clause_diff.c" ex="false" tool="0" flavor2="0">
+        <cTool>
+          <incDir>
+            <pElem>prolog</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="ILP/golem.c" ex="false" tool="0" flavor2="0">
+        <cTool>
+          <incDir>
+            <pElem>prolog</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="ILP/ilp.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="ILP/lgg.c" ex="false" tool="0" flavor2="0">
+        <cTool>
+          <incDir>
+            <pElem>prolog</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="ILP/progol.c" ex="false" tool="0" flavor2="0">
+        <cTool>
+          <incDir>
+            <pElem>prolog</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="ILP/refine.c" ex="false" tool="0" flavor2="0">
+        <cTool>
+          <incDir>
+            <pElem>prolog</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="KBS/db.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="KBS/frame.c" ex="false" tool="0" flavor2="0">
+        <cTool>
+          <incDir>
+            <pElem>prolog</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="KBS/frame.old.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="KBS/kbs.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="KBS/print_rule.c" ex="false" tool="0" flavor2="0">
+        <cTool>
+          <incDir>
+            <pElem>prolog</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="KBS/rdr.c" ex="false" tool="0" flavor2="0">
+        <cTool>
+          <incDir>
+            <pElem>prolog</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="KBS/rdr.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="KBS/rdr_fn.c" ex="false" tool="0" flavor2="0">
+        <cTool>
+          <incDir>
+            <pElem>prolog</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="KBS/rdr_plist.c" ex="false" tool="0" flavor2="0">
+        <cTool>
+          <incDir>
+            <pElem>prolog</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="ML/aq.c" ex="false" tool="0" flavor2="0">
+        <cTool>
+          <incDir>
+            <pElem>prolog</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="ML/array.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="ML/array.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="ML/atms.c" ex="false" tool="0" flavor2="0">
+        <cTool>
+          <incDir>
+            <pElem>prolog</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="ML/attr_info.c" ex="false" tool="0" flavor2="0">
+        <cTool>
+          <incDir>
+            <pElem>prolog</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="ML/attr_info.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="ML/bp.c" ex="false" tool="0" flavor2="0">
+        <cTool>
+          <incDir>
+            <pElem>prolog</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="ML/discrim.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="ML/duce.c" ex="false" tool="0" flavor2="0">
+        <cTool>
+          <incDir>
+            <pElem>prolog</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="ML/hash.c" ex="false" tool="0" flavor2="0">
+        <cTool>
+          <incDir>
+            <pElem>prolog</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="ML/heap.c" ex="false" tool="0" flavor2="0">
+        <cTool>
+          <incDir>
+            <pElem>prolog</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="ML/id.c" ex="false" tool="0" flavor2="0">
+        <cTool>
+          <incDir>
+            <pElem>prolog</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="ML/induct.c" ex="false" tool="0" flavor2="0">
+        <cTool>
+          <incDir>
+            <pElem>prolog</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="ML/line.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="ML/ml.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="ML/mreg.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="ML/rt.c" ex="false" tool="0" flavor2="0">
+        <cTool>
+          <incDir>
+            <pElem>prolog</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="ML/scw.c" ex="false" tool="0" flavor2="0">
+        <cTool>
+          <incDir>
+            <pElem>prolog</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="ML/set.c" ex="false" tool="0" flavor2="0">
+        <cTool>
+          <incDir>
+            <pElem>prolog</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="Probot/convagent.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="Probot/probot.c" ex="false" tool="0" flavor2="0">
+        <cTool>
+          <incDir>
+            <pElem>prolog</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="Probot/rdr_chat.c" ex="false" tool="0" flavor2="0">
+        <cTool>
+          <incDir>
+            <pElem>KBS</pElem>
+            <pElem>prolog</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="Probot/read_script.c" ex="false" tool="0" flavor2="0">
+        <cTool>
+          <incDir>
+            <pElem>prolog</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <folder path="0/GUI">
+        <cTool>
+          <incDir>
+            <pElem>GUI</pElem>
+            <pElem>Probot</pElem>
+            <pElem>/opt/local/include</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/ILP">
+        <cTool>
+          <incDir>
+            <pElem>ILP</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/KBS">
+        <cTool>
+          <incDir>
+            <pElem>KBS</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/ML">
+        <cTool>
+          <incDir>
+            <pElem>ML</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/Probot">
+        <cTool>
+          <incDir>
+            <pElem>KBS</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/image">
+        <cTool>
+          <incDir>
+            <pElem>image</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/prolog">
+        <cTool>
+          <incDir>
+            <pElem>prolog</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <item path="image/bfl.c" ex="false" tool="0" flavor2="0">
+        <cTool>
+          <incDir>
+            <pElem>prolog</pElem>
+            <pElem>/opt/local/include</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="image/bfl.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="image/blob.c" ex="false" tool="0" flavor2="0">
+        <cTool>
+          <incDir>
+            <pElem>/opt/local/include</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="image/edge.c" ex="false" tool="0" flavor2="0">
+        <cTool>
+          <incDir>
+            <pElem>/opt/local/include</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="image/p_image.c" ex="false" tool="0" flavor2="0">
+        <cTool>
+          <incDir>
+            <pElem>prolog</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="image/p_pbm.c" ex="false" tool="0" flavor2="0">
+        <cTool>
+          <incDir>
+            <pElem>prolog</pElem>
+            <pElem>/opt/local/include</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="image/p_pbm.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="image/p_pgm.c" ex="false" tool="0" flavor2="0">
+        <cTool>
+          <incDir>
+            <pElem>prolog</pElem>
+            <pElem>/opt/local/include</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="image/p_pgm.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="image/p_ppm.c" ex="false" tool="0" flavor2="0">
+        <cTool>
+          <incDir>
+            <pElem>prolog</pElem>
+            <pElem>/opt/local/include</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="image/p_ppm.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="image/skeleton.c" ex="false" tool="0" flavor2="0">
+        <cTool>
+          <incDir>
+            <pElem>/opt/local/include</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="image/trace.c" ex="false" tool="0" flavor2="0">
+        <cTool>
+          <incDir>
+            <pElem>prolog</pElem>
+            <pElem>/opt/local/include</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="image/version.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="prolog/IPinterface.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="prolog/IPinterface.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="prolog/atom.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="prolog/chartype.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="prolog/dcg.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="prolog/eval.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="prolog/evloop.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="prolog/files.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="prolog/lex.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="prolog/main.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="prolog/make.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="prolog/mem.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="prolog/out.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="prolog/p_compare.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="prolog/p_db.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="prolog/p_lists.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="prolog/p_math.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="prolog/p_meta.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="prolog/p_sockets.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="prolog/p_system.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="prolog/p_unix.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="prolog/plist.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="prolog/pred.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="prolog/prolog.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="prolog/prove.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="prolog/prove.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="prolog/read.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="prolog/string_io.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="prolog/string_io.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="prolog/unify.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="prolog/version.c" ex="false" tool="0" flavor2="0">
+      </item>
+    </conf>
+    <conf name="Bagger" type="0">
+      <toolsSet>
+        <compilerSet>GNU|GNU</compilerSet>
+        <dependencyChecking>false</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <codeAssistance>
+      </codeAssistance>
+      <makefileType>
+        <makeTool>
+          <buildCommandWorkingDir>/Users/claude/Projects/NetBeansProjects/iProlog/src</buildCommandWorkingDir>
+          <buildCommand>${MAKE} -f Makefile</buildCommand>
+          <cleanCommand>${MAKE} -f Makefile clean</cleanCommand>
+          <executablePath>../bin/prolog</executablePath>
+        </makeTool>
+      </makefileType>
+      <item path="GUI/face.c" ex="false" tool="0" flavor2="0">
+        <cTool>
+          <incDir>
+            <pElem>prolog</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="GUI/fbrowser_cb.c" ex="false" tool="0" flavor2="0">
+        <cTool>
+          <incDir>
+            <pElem>prolog</pElem>
+            <pElem>/opt/local/include</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="GUI/generic.c" ex="false" tool="0" flavor2="0">
+        <cTool>
+          <incDir>
+            <pElem>/opt/local/include</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="GUI/generic.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="GUI/gui.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="GUI/instance_display.c" ex="false" tool="0" flavor2="0">
+        <cTool>
+          <incDir>
+            <pElem>prolog</pElem>
+            <pElem>/opt/local/include</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="GUI/rdr_GUI.c" ex="false" tool="0" flavor2="0">
+        <cTool>
+          <incDir>
+            <pElem>/opt/local/include</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="GUI/rdr_GUI.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="GUI/rdr_cb.c" ex="false" tool="0" flavor2="0">
+        <cTool>
+          <incDir>
+            <pElem>KBS</pElem>
+            <pElem>prolog</pElem>
+            <pElem>/opt/local/include</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="GUI/xforms_io.c" ex="false" tool="0" flavor2="0">
+        <cTool>
+          <incDir>
+            <pElem>prolog</pElem>
+            <pElem>/opt/local/include</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="GUI/xmessage.c" ex="false" tool="0" flavor2="0">
+        <cTool>
+          <incDir>
+            <pElem>prolog</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="ILP/clause_diff.c" ex="false" tool="0" flavor2="0">
+        <cTool>
+          <incDir>
+            <pElem>prolog</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="ILP/golem.c" ex="false" tool="0" flavor2="0">
+        <cTool>
+          <incDir>
+            <pElem>prolog</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="ILP/ilp.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="ILP/lgg.c" ex="false" tool="0" flavor2="0">
+        <cTool>
+          <incDir>
+            <pElem>prolog</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="ILP/progol.c" ex="false" tool="0" flavor2="0">
+        <cTool>
+          <incDir>
+            <pElem>prolog</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="ILP/refine.c" ex="false" tool="0" flavor2="0">
+        <cTool>
+          <incDir>
+            <pElem>prolog</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="KBS/db.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="KBS/frame.c" ex="false" tool="0" flavor2="0">
+        <cTool>
+          <incDir>
+            <pElem>prolog</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="KBS/frame.old.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="KBS/kbs.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="KBS/print_rule.c" ex="false" tool="0" flavor2="0">
+        <cTool>
+          <incDir>
+            <pElem>prolog</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="KBS/rdr.c" ex="false" tool="0" flavor2="0">
+        <cTool>
+          <incDir>
+            <pElem>prolog</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="KBS/rdr.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="KBS/rdr_fn.c" ex="false" tool="0" flavor2="0">
+        <cTool>
+          <incDir>
+            <pElem>prolog</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="KBS/rdr_plist.c" ex="false" tool="0" flavor2="0">
+        <cTool>
+          <incDir>
+            <pElem>prolog</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="ML/aq.c" ex="false" tool="0" flavor2="0">
+        <cTool>
+          <incDir>
+            <pElem>prolog</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="ML/array.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="ML/array.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="ML/atms.c" ex="false" tool="0" flavor2="0">
+        <cTool>
+          <incDir>
+            <pElem>prolog</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="ML/attr_info.c" ex="false" tool="0" flavor2="0">
+        <cTool>
+          <incDir>
+            <pElem>prolog</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="ML/attr_info.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="ML/bp.c" ex="false" tool="0" flavor2="0">
+        <cTool>
+          <incDir>
+            <pElem>prolog</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="ML/discrim.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="ML/duce.c" ex="false" tool="0" flavor2="0">
+        <cTool>
+          <incDir>
+            <pElem>prolog</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="ML/hash.c" ex="false" tool="0" flavor2="0">
+        <cTool>
+          <incDir>
+            <pElem>prolog</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="ML/heap.c" ex="false" tool="0" flavor2="0">
+        <cTool>
+          <incDir>
+            <pElem>prolog</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="ML/id.c" ex="false" tool="0" flavor2="0">
+        <cTool>
+          <incDir>
+            <pElem>prolog</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="ML/induct.c" ex="false" tool="0" flavor2="0">
+        <cTool>
+          <incDir>
+            <pElem>prolog</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="ML/line.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="ML/ml.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="ML/mreg.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="ML/rt.c" ex="false" tool="0" flavor2="0">
+        <cTool>
+          <incDir>
+            <pElem>prolog</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="ML/scw.c" ex="false" tool="0" flavor2="0">
+        <cTool>
+          <incDir>
+            <pElem>prolog</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="ML/set.c" ex="false" tool="0" flavor2="0">
+        <cTool>
+          <incDir>
+            <pElem>prolog</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="Probot/convagent.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="Probot/probot.c" ex="false" tool="0" flavor2="0">
+        <cTool>
+          <incDir>
+            <pElem>prolog</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="Probot/rdr_chat.c" ex="false" tool="0" flavor2="0">
+        <cTool>
+          <incDir>
+            <pElem>KBS</pElem>
+            <pElem>prolog</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="Probot/read_script.c" ex="false" tool="0" flavor2="0">
+        <cTool>
+          <incDir>
+            <pElem>prolog</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <folder path="0/GUI">
+        <cTool>
+          <incDir>
+            <pElem>GUI</pElem>
+            <pElem>Probot</pElem>
+            <pElem>/opt/local/include</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/ILP">
+        <cTool>
+          <incDir>
+            <pElem>ILP</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/KBS">
+        <cTool>
+          <incDir>
+            <pElem>KBS</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/ML">
+        <cTool>
+          <incDir>
+            <pElem>ML</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/Probot">
+        <cTool>
+          <incDir>
+            <pElem>KBS</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/image">
+        <cTool>
+          <incDir>
+            <pElem>image</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/prolog">
+        <cTool>
+          <incDir>
+            <pElem>prolog</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <item path="image/bfl.c" ex="false" tool="0" flavor2="0">
+        <cTool>
+          <incDir>
+            <pElem>prolog</pElem>
+            <pElem>/opt/local/include</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="image/bfl.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="image/blob.c" ex="false" tool="0" flavor2="0">
+        <cTool>
+          <incDir>
+            <pElem>/opt/local/include</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="image/edge.c" ex="false" tool="0" flavor2="0">
+        <cTool>
+          <incDir>
+            <pElem>/opt/local/include</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="image/p_image.c" ex="false" tool="0" flavor2="0">
+        <cTool>
+          <incDir>
+            <pElem>prolog</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="image/p_pbm.c" ex="false" tool="0" flavor2="0">
+        <cTool>
+          <incDir>
+            <pElem>prolog</pElem>
+            <pElem>/opt/local/include</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="image/p_pbm.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="image/p_pgm.c" ex="false" tool="0" flavor2="0">
+        <cTool>
+          <incDir>
+            <pElem>prolog</pElem>
+            <pElem>/opt/local/include</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="image/p_pgm.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="image/p_ppm.c" ex="false" tool="0" flavor2="0">
+        <cTool>
+          <incDir>
+            <pElem>prolog</pElem>
+            <pElem>/opt/local/include</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="image/p_ppm.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="image/skeleton.c" ex="false" tool="0" flavor2="0">
+        <cTool>
+          <incDir>
+            <pElem>/opt/local/include</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="image/trace.c" ex="false" tool="0" flavor2="0">
+        <cTool>
+          <incDir>
+            <pElem>prolog</pElem>
+            <pElem>/opt/local/include</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="image/version.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="prolog/IPinterface.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="prolog/IPinterface.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="prolog/atom.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="prolog/chartype.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="prolog/dcg.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="prolog/eval.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="prolog/evloop.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="prolog/files.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="prolog/lex.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="prolog/main.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="prolog/make.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="prolog/mem.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="prolog/out.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="prolog/p_compare.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="prolog/p_db.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="prolog/p_lists.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="prolog/p_math.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="prolog/p_meta.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="prolog/p_sockets.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="prolog/p_system.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="prolog/p_unix.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="prolog/plist.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="prolog/pred.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="prolog/prolog.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="prolog/prove.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="prolog/prove.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="prolog/read.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="prolog/string_io.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="prolog/string_io.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="prolog/unify.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="prolog/version.c" ex="false" tool="0" flavor2="0">
+      </item>
+    </conf>
+    <conf name="ATMS" type="0">
+      <toolsSet>
+        <compilerSet>GNU|GNU</compilerSet>
+        <dependencyChecking>false</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <codeAssistance>
+      </codeAssistance>
+      <makefileType>
+        <makeTool>
+          <buildCommandWorkingDir>/Users/claude/Projects/NetBeansProjects/iProlog/src</buildCommandWorkingDir>
+          <buildCommand>${MAKE} -f Makefile</buildCommand>
+          <cleanCommand>${MAKE} -f Makefile clean</cleanCommand>
+          <executablePath>../bin/prolog</executablePath>
+        </makeTool>
+      </makefileType>
+      <item path="GUI/face.c" ex="false" tool="0" flavor2="0">
+        <cTool>
+          <incDir>
+            <pElem>prolog</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="GUI/fbrowser_cb.c" ex="false" tool="0" flavor2="0">
+        <cTool>
+          <incDir>
+            <pElem>prolog</pElem>
+            <pElem>/opt/local/include</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="GUI/generic.c" ex="false" tool="0" flavor2="0">
+        <cTool>
+          <incDir>
+            <pElem>/opt/local/include</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="GUI/generic.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="GUI/gui.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="GUI/instance_display.c" ex="false" tool="0" flavor2="0">
+        <cTool>
+          <incDir>
+            <pElem>prolog</pElem>
+            <pElem>/opt/local/include</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="GUI/rdr_GUI.c" ex="false" tool="0" flavor2="0">
+        <cTool>
+          <incDir>
+            <pElem>/opt/local/include</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="GUI/rdr_GUI.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="GUI/rdr_cb.c" ex="false" tool="0" flavor2="0">
+        <cTool>
+          <incDir>
+            <pElem>KBS</pElem>
+            <pElem>prolog</pElem>
+            <pElem>/opt/local/include</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="GUI/xforms_io.c" ex="false" tool="0" flavor2="0">
+        <cTool>
+          <incDir>
+            <pElem>prolog</pElem>
+            <pElem>/opt/local/include</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="GUI/xmessage.c" ex="false" tool="0" flavor2="0">
+        <cTool>
+          <incDir>
+            <pElem>prolog</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="ILP/clause_diff.c" ex="false" tool="0" flavor2="0">
+        <cTool>
+          <incDir>
+            <pElem>prolog</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="ILP/golem.c" ex="false" tool="0" flavor2="0">
+        <cTool>
+          <incDir>
+            <pElem>prolog</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="ILP/ilp.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="ILP/lgg.c" ex="false" tool="0" flavor2="0">
+        <cTool>
+          <incDir>
+            <pElem>prolog</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="ILP/progol.c" ex="false" tool="0" flavor2="0">
+        <cTool>
+          <incDir>
+            <pElem>prolog</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="ILP/refine.c" ex="false" tool="0" flavor2="0">
+        <cTool>
+          <incDir>
+            <pElem>prolog</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="KBS/db.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="KBS/frame.c" ex="false" tool="0" flavor2="0">
+        <cTool>
+          <incDir>
+            <pElem>prolog</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="KBS/frame.old.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="KBS/kbs.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="KBS/print_rule.c" ex="false" tool="0" flavor2="0">
+        <cTool>
+          <incDir>
+            <pElem>prolog</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="KBS/rdr.c" ex="false" tool="0" flavor2="0">
+        <cTool>
+          <incDir>
+            <pElem>prolog</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="KBS/rdr.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="KBS/rdr_fn.c" ex="false" tool="0" flavor2="0">
+        <cTool>
+          <incDir>
+            <pElem>prolog</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="KBS/rdr_plist.c" ex="false" tool="0" flavor2="0">
+        <cTool>
+          <incDir>
+            <pElem>prolog</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="ML/aq.c" ex="false" tool="0" flavor2="0">
+        <cTool>
+          <incDir>
+            <pElem>prolog</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="ML/array.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="ML/array.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="ML/atms.c" ex="false" tool="0" flavor2="0">
+        <cTool>
+          <incDir>
+            <pElem>prolog</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="ML/attr_info.c" ex="false" tool="0" flavor2="0">
+        <cTool>
+          <incDir>
+            <pElem>prolog</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="ML/attr_info.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="ML/bp.c" ex="false" tool="0" flavor2="0">
+        <cTool>
+          <incDir>
+            <pElem>prolog</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="ML/discrim.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="ML/duce.c" ex="false" tool="0" flavor2="0">
+        <cTool>
+          <incDir>
+            <pElem>prolog</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="ML/hash.c" ex="false" tool="0" flavor2="0">
+        <cTool>
+          <incDir>
+            <pElem>prolog</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="ML/heap.c" ex="false" tool="0" flavor2="0">
+        <cTool>
+          <incDir>
+            <pElem>prolog</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="ML/id.c" ex="false" tool="0" flavor2="0">
+        <cTool>
+          <incDir>
+            <pElem>prolog</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="ML/induct.c" ex="false" tool="0" flavor2="0">
+        <cTool>
+          <incDir>
+            <pElem>prolog</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="ML/line.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="ML/ml.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="ML/mreg.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="ML/rt.c" ex="false" tool="0" flavor2="0">
+        <cTool>
+          <incDir>
+            <pElem>prolog</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="ML/scw.c" ex="false" tool="0" flavor2="0">
+        <cTool>
+          <incDir>
+            <pElem>prolog</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="ML/set.c" ex="false" tool="0" flavor2="0">
+        <cTool>
+          <incDir>
+            <pElem>prolog</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="Probot/convagent.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="Probot/probot.c" ex="false" tool="0" flavor2="0">
+        <cTool>
+          <incDir>
+            <pElem>prolog</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="Probot/rdr_chat.c" ex="false" tool="0" flavor2="0">
+        <cTool>
+          <incDir>
+            <pElem>KBS</pElem>
+            <pElem>prolog</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="Probot/read_script.c" ex="false" tool="0" flavor2="0">
+        <cTool>
+          <incDir>
+            <pElem>prolog</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <folder path="0/GUI">
+        <cTool>
+          <incDir>
+            <pElem>GUI</pElem>
+            <pElem>Probot</pElem>
+            <pElem>/opt/local/include</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/ILP">
+        <cTool>
+          <incDir>
+            <pElem>ILP</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/KBS">
+        <cTool>
+          <incDir>
+            <pElem>KBS</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/ML">
+        <cTool>
+          <incDir>
+            <pElem>ML</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/Probot">
+        <cTool>
+          <incDir>
+            <pElem>KBS</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/image">
+        <cTool>
+          <incDir>
+            <pElem>image</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <folder path="0/prolog">
+        <cTool>
+          <incDir>
+            <pElem>prolog</pElem>
+          </incDir>
+        </cTool>
+      </folder>
+      <item path="image/bfl.c" ex="false" tool="0" flavor2="0">
+        <cTool>
+          <incDir>
+            <pElem>prolog</pElem>
+            <pElem>/opt/local/include</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="image/bfl.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="image/blob.c" ex="false" tool="0" flavor2="0">
+        <cTool>
+          <incDir>
+            <pElem>/opt/local/include</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="image/edge.c" ex="false" tool="0" flavor2="0">
+        <cTool>
+          <incDir>
+            <pElem>/opt/local/include</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="image/p_image.c" ex="false" tool="0" flavor2="0">
+        <cTool>
+          <incDir>
+            <pElem>prolog</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="image/p_pbm.c" ex="false" tool="0" flavor2="0">
+        <cTool>
+          <incDir>
+            <pElem>prolog</pElem>
+            <pElem>/opt/local/include</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="image/p_pbm.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="image/p_pgm.c" ex="false" tool="0" flavor2="0">
+        <cTool>
+          <incDir>
+            <pElem>prolog</pElem>
+            <pElem>/opt/local/include</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="image/p_pgm.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="image/p_ppm.c" ex="false" tool="0" flavor2="0">
+        <cTool>
+          <incDir>
+            <pElem>prolog</pElem>
+            <pElem>/opt/local/include</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="image/p_ppm.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="image/skeleton.c" ex="false" tool="0" flavor2="0">
+        <cTool>
+          <incDir>
+            <pElem>/opt/local/include</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="image/trace.c" ex="false" tool="0" flavor2="0">
+        <cTool>
+          <incDir>
+            <pElem>prolog</pElem>
+            <pElem>/opt/local/include</pElem>
+          </incDir>
+        </cTool>
+      </item>
+      <item path="image/version.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="prolog/IPinterface.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="prolog/IPinterface.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="prolog/atom.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="prolog/chartype.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="prolog/dcg.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="prolog/eval.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="prolog/evloop.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="prolog/files.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="prolog/lex.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="prolog/main.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="prolog/make.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="prolog/mem.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="prolog/out.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="prolog/p_compare.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="prolog/p_db.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="prolog/p_lists.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="prolog/p_math.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="prolog/p_meta.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="prolog/p_sockets.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="prolog/p_system.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="prolog/p_unix.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="prolog/plist.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="prolog/pred.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="prolog/prolog.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="prolog/prove.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="prolog/prove.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="prolog/read.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="prolog/string_io.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="prolog/string_io.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="prolog/unify.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="prolog/version.c" ex="false" tool="0" flavor2="0">
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>

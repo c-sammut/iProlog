@@ -1,0 +1,50 @@
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Rule Memory
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+load "examples/rules.pro"!
+
+dynamic(a/0, b/0, c/1, d/0, e/1, f/0, g/0, h/0, p/0, q/0)!
+
+rule1 rule
+if	a
+and	b
+then	assert(c)
+and	assert(d).
+
+rule2 rule
+if	c(X)
+then	assert(e(X)).
+
+rule3 rule
+if	e(X)
+and	f
+then	assert(g).
+
+rule4 rule
+if	g
+and	d
+then	assert(h).
+
+rule5 rule
+if	a
+and	p
+then	assert(q).
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Working Memory
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+a.
+
+b.
+
+f.
+
+p.
+
+c(a).
+
+c(b).
+

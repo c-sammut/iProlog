@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="90">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <df root="." name="0">
+      <df name="frames">
+        <df name="libdb.dylib.dSYM">
+          <df name="Contents">
+            <df name="Resources">
+              <df name="DWARF">
+              </df>
+            </df>
+          </df>
+        </df>
+        <df name="libdb.so.dSYM">
+          <df name="Contents">
+            <df name="Resources">
+              <df name="DWARF">
+              </df>
+            </df>
+          </df>
+        </df>
+        <in>control.c</in>
+        <in>db.c</in>
+        <in>frame.c</in>
+        <in>tc.c</in>
+      </df>
+      <df name="GUI">
+        <in>face.c</in>
+        <in>fbrowser.c</in>
+        <in>fbrowser.h</in>
+        <in>fbrowser_cb copy.c</in>
+        <in>fbrowser_cb.c</in>
+        <in>fbrowser_init.c</in>
+        <in>fbrowser_main.c</in>
+        <in>generic.c</in>
+        <in>generic.h</in>
+        <in>gui.c</in>
+        <in>instance_display.c</in>
+        <in>instance_display.h</in>
+        <in>instance_frame.c</in>
+        <in>instance_frame.h</in>
+        <in>old_tcl.c</in>
+        <in>rdr_GUI.c</in>
+        <in>rdr_GUI.h</in>
+        <in>rdr_GUI.old.c</in>
+        <in>rdr_cb.c</in>
+        <in>rdr_main.c</in>
+        <in>string_io_old.c</in>
+        <in>tcl.c</in>
+        <in>xforms_io.c</in>
+        <in>xforms_io.h</in>
+        <in>xmessage.c</in>
+      </df>
+      <df name="ILP">
+        <in>clause_diff.c</in>
+        <in>foil.c</in>
+        <in>golem.c</in>
+        <in>ilp.c</in>
+        <in>lgg.c</in>
+        <in>lgg.h</in>
+        <in>lgg.tag.c</in>
+        <in>progol.c</in>
+        <in>refine.c</in>
+        <in>refine.h</in>
+        <in>sort.c</in>
+      </df>
+      <df name="image">
+        <in>bfl.c</in>
+        <in>bfl.h</in>
+        <in>blob.c</in>
+        <in>blob.h</in>
+        <in>edge.c</in>
+        <in>edge.h</in>
+        <in>p_image.c</in>
+        <in>p_image.h</in>
+        <in>p_pbm.c</in>
+        <in>p_pbm.h</in>
+        <in>p_pgm.c</in>
+        <in>p_pgm.h</in>
+        <in>p_ppm.c</in>
+        <in>p_ppm.h</in>
+        <in>skeleton.c</in>
+        <in>skeleton.h</in>
+        <in>trace.c</in>
+        <in>trace.h</in>
+        <in>version.c</in>
+      </df>
+      <df name="KBS">
+        <in>db.c</in>
+        <in>frame.c</in>
+        <in>frame.h</in>
+        <in>frame.old.c</in>
+        <in>kbs.c</in>
+        <in>plist.h</in>
+        <in>print_rule.c</in>
+        <in>print_rule.h</in>
+        <in>rdr.c</in>
+        <in>rdr.frame.c</in>
+        <in>rdr.h</in>
+        <in>rdr.old.c</in>
+        <in>rdr_fn.c</in>
+        <in>rdr_plist.c</in>
+        <in>rdr_plist.h</in>
+      </df>
+      <df name="ML">
+        <in>aq.c</in>
+        <in>aq.h</in>
+        <in>array.c</in>
+        <in>array.h</in>
+        <in>atms.c</in>
+        <in>attr.h</in>
+        <in>attr_info.c</in>
+        <in>attr_info.h</in>
+        <in>bp.c</in>
+        <in>discrim.c</in>
+        <in>duce.c</in>
+        <in>hash.c</in>
+        <in>hash.h</in>
+        <in>heap.c</in>
+        <in>heap.h</in>
+        <in>history.c</in>
+        <in>id.c</in>
+        <in>induct.c</in>
+        <in>line.c</in>
+        <in>ml.c</in>
+        <in>mreg.c</in>
+        <in>rt.c</in>
+        <in>scw.c</in>
+        <in>set.c</in>
+        <in>set.h</in>
+      </df>
+      <df name="Probot">
+        <in>calendar.c</in>
+        <in>convagent.c</in>
+        <in>match.c</in>
+        <in>probot.c</in>
+        <in>probot.h</in>
+        <in>probot_old.c</in>
+        <in>rdr_chat.c</in>
+        <in>read_script.c</in>
+        <in>read_script.h</in>
+        <in>reply.c</in>
+      </df>
+      <df name="prolog">
+        <in>IPinterface.c</in>
+        <in>IPinterface.h</in>
+        <in>atom.c</in>
+        <in>atom.h</in>
+        <in>chartype.c</in>
+        <in>dcg.c</in>
+        <in>dcg.h</in>
+        <in>dump.c</in>
+        <in>dump.h</in>
+        <in>eval.c</in>
+        <in>eval.h</in>
+        <in>evloop.c</in>
+        <in>evloop.h</in>
+        <in>files.c</in>
+        <in>files.h</in>
+        <in>lex.c</in>
+        <in>lex.h</in>
+        <in>main.c</in>
+        <in>make.c</in>
+        <in>make.h</in>
+        <in>mem.c</in>
+        <in>mem.h</in>
+        <in>out.c</in>
+        <in>out.h</in>
+        <in>p_compare.c</in>
+        <in>p_compare.h</in>
+        <in>p_db.c</in>
+        <in>p_db.h</in>
+        <in>p_lists.c</in>
+        <in>p_lists.h</in>
+        <in>p_math.c</in>
+        <in>p_math.h</in>
+        <in>p_meta.c</in>
+        <in>p_sockets.c</in>
+        <in>p_sockets.h</in>
+        <in>p_system.c</in>
+        <in>p_system.h</in>
+        <in>p_unix.c</in>
+        <in>p_unix.h</in>
+        <in>plist.c</in>
+        <in>plist.h</in>
+        <in>pred.c</in>
+        <in>pred.h</in>
+        <in>prolog.h</in>
+        <in>prove.c</in>
+        <in>prove.h</in>
+        <in>read.c</in>
+        <in>read.h</in>
+        <in>string_io.c</in>
+        <in>string_io.h</in>
+        <in>unify.c</in>
+        <in>unify.h</in>
+        <in>version.c</in>
+      </df>
+    </df>
+  </logicalFolder>
+  <projectmakefile>Makefile-src.mk</projectmakefile>
+  <confs>
+    <conf name="Default" type="0">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <platform>4</platform>
+      </toolsSet>
+      <compile>
+        <compiledirpicklist>
+          <compiledirpicklistitem>.</compiledirpicklistitem>
+          <compiledirpicklistitem>${AUTO_FOLDER}</compiledirpicklistitem>
+        </compiledirpicklist>
+        <compiledir>${AUTO_FOLDER}</compiledir>
+        <compilecommandpicklist>
+          <compilecommandpicklistitem>${MAKE} ${ITEM_NAME}.o</compilecommandpicklistitem>
+          <compilecommandpicklistitem>${AUTO_COMPILE}</compilecommandpicklistitem>
+        </compilecommandpicklist>
+        <compilecommand>${AUTO_COMPILE}</compilecommand>
+      </compile>
+      <dbx_gdbdebugger version="1">
+        <gdb_pathmaps>
+        </gdb_pathmaps>
+        <gdb_interceptlist>
+          <gdbinterceptoptions gdb_all="false" gdb_unhandled="true" gdb_unexpected="true"/>
+        </gdb_interceptlist>
+        <gdb_options>
+          <DebugOptions>
+          </DebugOptions>
+        </gdb_options>
+        <gdb_buildfirst gdb_buildfirst_overriden="false" gdb_buildfirst_old="false"/>
+      </dbx_gdbdebugger>
+      <nativedebugger version="1">
+        <engine>gdb</engine>
+      </nativedebugger>
+      <runprofile version="9">
+        <runcommandpicklist>
+          <runcommandpicklistitem>"${OUTPUT_PATH}"</runcommandpicklistitem>
+        </runcommandpicklist>
+        <runcommand>"${OUTPUT_PATH}"</runcommand>
+        <rundir>/Users/claude/Projects/NetBeansProjects/iProlog/examples</rundir>
+        <buildfirst>true</buildfirst>
+        <terminal-type>0</terminal-type>
+        <remove-instrumentation>0</remove-instrumentation>
+        <environment>
+        </environment>
+      </runprofile>
+    </conf>
+    <conf name="Cylinder" type="0">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <platform>4</platform>
+      </toolsSet>
+      <compile>
+        <compiledirpicklist>
+          <compiledirpicklistitem>.</compiledirpicklistitem>
+          <compiledirpicklistitem>${AUTO_FOLDER}</compiledirpicklistitem>
+        </compiledirpicklist>
+        <compiledir>${AUTO_FOLDER}</compiledir>
+        <compilecommandpicklist>
+          <compilecommandpicklistitem>${MAKE} ${ITEM_NAME}.o</compilecommandpicklistitem>
+          <compilecommandpicklistitem>${AUTO_COMPILE}</compilecommandpicklistitem>
+        </compilecommandpicklist>
+        <compilecommand>${AUTO_COMPILE}</compilecommand>
+      </compile>
+      <dbx_gdbdebugger version="1">
+        <gdb_pathmaps>
+        </gdb_pathmaps>
+        <gdb_interceptlist>
+          <gdbinterceptoptions gdb_all="false" gdb_unhandled="true" gdb_unexpected="true"/>
+        </gdb_interceptlist>
+        <gdb_options>
+          <DebugOptions>
+          </DebugOptions>
+        </gdb_options>
+        <gdb_buildfirst gdb_buildfirst_overriden="false" gdb_buildfirst_old="false"/>
+      </dbx_gdbdebugger>
+      <nativedebugger version="1">
+        <engine>gdb</engine>
+      </nativedebugger>
+      <runprofile version="9">
+        <runcommandpicklist>
+          <runcommandpicklistitem>"${OUTPUT_PATH}"</runcommandpicklistitem>
+          <runcommandpicklistitem>"${OUTPUT_PATH}" frames_cylinder.pro</runcommandpicklistitem>
+        </runcommandpicklist>
+        <runcommand>"${OUTPUT_PATH}" frames_cylinder.pro</runcommand>
+        <rundir>/Users/claude/Projects/NetBeansProjects/iProlog/examples</rundir>
+        <buildfirst>true</buildfirst>
+        <terminal-type>0</terminal-type>
+        <remove-instrumentation>0</remove-instrumentation>
+        <environment>
+        </environment>
+      </runprofile>
+    </conf>
+    <conf name="Bagger" type="0">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <platform>4</platform>
+      </toolsSet>
+      <compile>
+        <compiledirpicklist>
+          <compiledirpicklistitem>.</compiledirpicklistitem>
+          <compiledirpicklistitem>${AUTO_FOLDER}</compiledirpicklistitem>
+        </compiledirpicklist>
+        <compiledir>${AUTO_FOLDER}</compiledir>
+        <compilecommandpicklist>
+          <compilecommandpicklistitem>${MAKE} ${ITEM_NAME}.o</compilecommandpicklistitem>
+          <compilecommandpicklistitem>${AUTO_COMPILE}</compilecommandpicklistitem>
+        </compilecommandpicklist>
+        <compilecommand>${AUTO_COMPILE}</compilecommand>
+      </compile>
+      <dbx_gdbdebugger version="1">
+        <gdb_pathmaps>
+        </gdb_pathmaps>
+        <gdb_interceptlist>
+          <gdbinterceptoptions gdb_all="false" gdb_unhandled="true" gdb_unexpected="true"/>
+        </gdb_interceptlist>
+        <gdb_options>
+          <DebugOptions>
+          </DebugOptions>
+        </gdb_options>
+        <gdb_buildfirst gdb_buildfirst_overriden="false" gdb_buildfirst_old="false"/>
+      </dbx_gdbdebugger>
+      <nativedebugger version="1">
+        <engine>gdb</engine>
+      </nativedebugger>
+      <runprofile version="9">
+        <runcommandpicklist>
+          <runcommandpicklistitem>"${OUTPUT_PATH}"</runcommandpicklistitem>
+          <runcommandpicklistitem>"${OUTPUT_PATH}" bagger1.rules</runcommandpicklistitem>
+        </runcommandpicklist>
+        <runcommand>"${OUTPUT_PATH}" bagger1.rules</runcommand>
+        <rundir>/Users/claude/Projects/NetBeansProjects/iProlog/examples</rundir>
+        <buildfirst>true</buildfirst>
+        <terminal-type>0</terminal-type>
+        <remove-instrumentation>0</remove-instrumentation>
+        <environment>
+        </environment>
+      </runprofile>
+    </conf>
+    <conf name="ATMS" type="0">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <platform>4</platform>
+      </toolsSet>
+      <compile>
+        <compiledirpicklist>
+          <compiledirpicklistitem>.</compiledirpicklistitem>
+          <compiledirpicklistitem>${AUTO_FOLDER}</compiledirpicklistitem>
+        </compiledirpicklist>
+        <compiledir>${AUTO_FOLDER}</compiledir>
+        <compilecommandpicklist>
+          <compilecommandpicklistitem>${MAKE} ${ITEM_NAME}.o</compilecommandpicklistitem>
+          <compilecommandpicklistitem>${AUTO_COMPILE}</compilecommandpicklistitem>
+        </compilecommandpicklist>
+        <compilecommand>${AUTO_COMPILE}</compilecommand>
+      </compile>
+      <dbx_gdbdebugger version="1">
+        <gdb_pathmaps>
+        </gdb_pathmaps>
+        <gdb_interceptlist>
+          <gdbinterceptoptions gdb_all="false" gdb_unhandled="true" gdb_unexpected="true"/>
+        </gdb_interceptlist>
+        <gdb_options>
+          <DebugOptions>
+          </DebugOptions>
+        </gdb_options>
+        <gdb_buildfirst gdb_buildfirst_overriden="false" gdb_buildfirst_old="false"/>
+      </dbx_gdbdebugger>
+      <nativedebugger version="1">
+        <engine>gdb</engine>
+      </nativedebugger>
+      <runprofile version="9">
+        <runcommandpicklist>
+          <runcommandpicklistitem>"${OUTPUT_PATH}"</runcommandpicklistitem>
+          <runcommandpicklistitem>"${OUTPUT_PATH}" ATMS_example.pro</runcommandpicklistitem>
+        </runcommandpicklist>
+        <runcommand>"${OUTPUT_PATH}" ATMS_example.pro</runcommand>
+        <rundir>/Users/claude/Projects/NetBeansProjects/iProlog/examples</rundir>
+        <buildfirst>true</buildfirst>
+        <terminal-type>0</terminal-type>
+        <remove-instrumentation>0</remove-instrumentation>
+        <environment>
+        </environment>
+      </runprofile>
+    </conf>
+  </confs>
+</configurationDescriptor>

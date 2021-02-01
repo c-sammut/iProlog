@@ -1,0 +1,183 @@
+load "examples/rules.pro"!
+
+dynamic(do_count/2, new_bag/1, in_freezer_bag/1, stop/0, step/1, unpacked/1)!
+
+% We have to fudge two different granolas because the rules interpreter prevents
+% the same rule firing on he same condition. A better representation would fix this.
+
+container(chips, plastic_bag).
+container(bread, plastic_bag).
+container(granola1, cardboard_box).
+container(granola2, cardboard_box).
+container(glob, jar).
+container(ice_cream, cardboard_carton).
+container(pepsi, bottle).
+
+size(chips, medium).
+size(bread, medium).
+size(granola1, large).
+size(granola2, large).
+size(glop, small).
+size(ice_cream, medium).
+size(pepsi, large).
+
+frozen(chips, no).
+frozen(bread, no).
+frozen(granola1, no).
+frozen(granola2, no).
+frozen(glob, no).
+frozen(ice_cream, yes).
+frozen(pepsi, no).
+
+step(check_order).
+bag(1).
+bag_count(1, large, 0).
+bag_count(1, medium, 0).
+bag_count(1, small, 0).
+
+unpacked(bread).
+unpacked(glop).
+unpacked(granola1).
+unpacked(granola2).
+unpacked(ice_cream).
+unpacked(chips).
+
+% conflict resolution in rules interpreter doesn't use recency, so the book keeping
+% stuff has to precede the rest so that they get done as soon as predicates in the
+% database are available.
+
+bag_count rule
+if	bag(Bag, Item)
+then	assert(do_count(Bag, Item)).
+
+do_count rule
+if	do_count(Bag, Item)
+and	size(Item, Size)
+and	bag_count(Bag, Size, N)
+then	retract(do_count(Bag, Item))
+and	retract(bag_count(Bag, Size, N))
+and	N1 is N + 1
+and	assert(bag_count(Bag, Size, N1)).
+
+new_bag rule
+if	new_bag(N)
+then	retract(new_bag(N))
+and	assert(bag(N))
+and	assert(bag_count(N, large, 0))
+and	assert(bag_count(N, medium, 0))
+and	assert(bag_count(N, small, 0)).
+
+% This is the main set of rules for packing items, starting with large items.
+
+add_pepsi rule
+if	step(check_order)
+and	unpacked(chips)
+and	not(unpacked(pepsi))
+then	assert(unpacked(pepsi)).
+
+start_packing_large_items rule
+if	step(check_order)
+then	retract(step(check_order))
+and	assert(step(pack_large_items)).
+
+pack_bottle rule
+if	step(pack_large_items)
+and	unpacked(Item1)
+and	size(Item1, large)
+and	unpacked(Item2)
+and	container(Item2, bottle)
+and	size(Item2, large)
+and	bag_count(Bag, large, N)
+and	N < 6
+then	retract(unpacked(Item2))
+and	assert(bag(Bag, Item2)).
+
+pack_large_item rule
+if	step(pack_large_items)
+and	unpacked(Item)
+and	size(Item, large)
+and	bag_count(Bag, large, N)
+and	N < 6
+then	retract(unpacked(Item))
+and	assert(bag(Bag, Item)).
+
+new_bag_for_large_items rule
+if	step(pack_large_items)
+and	unpacked(Item)
+and	size(Item, large)
+and	bag(CurrentBag)
+then	retract(bag(CurrentBag))
+and	NewBagCount is CurrentBag + 1
+and	assert(new_bag(NewBagCount)).
+
+start_packing_medium_items rule
+if	step(pack_large_items)
+then	retract(step(pack_large_items))
+and	assert(step(pack_medium_items)).
+
+% Pack medium items after the large ones.
+
+pack_frozen_medium_item rule
+if	step(pack_medium_items)
+and	unpacked(Item)
+and	size(Item, medium)
+and	bag_count(Bag, small, 0)
+and	bag_count(Bag, large, 0)
+and	frozen(Item, yes)
+and	not(in_freezer_bag(Item))
+then	assert(in_freezer_bag(Item)).
+
+pack_medium_item rule
+if	step(pack_medium_items)
+and	unpacked(Item)
+and	size(Item, medium)
+and	bag_count(Bag, small, 0)
+and	bag_count(Bag, large, 0)
+then	retract(unpacked(Item))
+and	assert(bag(Bag, Item)).
+
+new_bag_for_medium_items rule
+if	step(pack_medium_items)
+and	unpacked(Item)
+and	size(Item, medium)
+and	bag(CurrentBag)
+then	retract(bag(CurrentBag))
+and	NewBagCount is CurrentBag + 1
+and	assert(new_bag(NewBagCount)).
+
+start_packing_small_items rule
+if	step(pack_medium_items)
+then	retract(step(pack_medium_items))
+and	assert(step(pack_small_items)).
+
+% Finish packing the small items
+
+pack_small_item_separate_from_large_item rule
+if	step(pack_small_items)
+and	unpacked(Item)
+and	size(Item, small)
+and	bag_count(Bag, large, 0)
+then	retract(unpacked(Item))
+and	assert(bag(Bag, Item)).
+
+pack_small_item rule
+if	step(pack_small_items)
+and	unpacked(Item)
+and	size(Item, small)
+and	bag_count(Bag, _, _)
+then	retract(unpacked(Item))
+and	assert(bag(Bag, Item)).
+
+new_bag_for_small_items rule
+if	step(pack_small_items)
+and	unpacked(Item)
+and	size(Item, small)
+and	bag(CurrentBag)
+then	retract(bag(CurrentBag))
+and	NewBagCount is CurrentBag + 1
+and	assert(new_bag(NewBagCount)).
+
+finish rule
+if	step(pack_small_items)
+then	retract(step(pack_small_items))
+and	stop.
