@@ -16,7 +16,7 @@ double get_time(void)
 	return ((double)(t.tms_utime)/HZ);
 }
 
-char * date_time(void)
+char *date_time(void)
 {
 	struct tm *t;
 	time_t clock;

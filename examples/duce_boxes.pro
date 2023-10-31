@@ -1,3 +1,5 @@
+library('ml')!
+
 go :-
 	X is duce(left, right),
 	pp X.

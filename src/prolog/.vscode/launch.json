@@ -9,10 +9,28 @@
 			"type": "cppdbg",
 			"request": "launch",
 			"program": "${workspaceFolder}/prolog",
-			"args": ["jrip_prop_rules_0.pro"],
+			"args": ["duce_example.pro"],
 			"stopAtEntry": false,
-			"cwd": "/home/claude/Projects/VIP/Propsitions/IterativeTest_iteration=3_k=8-2_window_size=3_reduction=1_blobbing=False_initial_reduction=3",
-			"environment": [],
+			"cwd": "/home/claude/Projects/Languages/iProlog/examples",
+			"environment": [{"name":"LD_LIBRARY_PATH", "value":"/home/claude/Projects/Languages/iProlog/lib"}],
+			"MIMode": "gdb",
+			"setupCommands": [
+				{
+					"description": "Enable pretty-printing for gdb",
+					"text": "-enable-pretty-printing",
+					"ignoreFailures": true
+				}
+			]
+		},
+		{
+			"name": "(gdb) Mushrooms",
+			"type": "cppdbg",
+			"request": "launch",
+			"program": "${workspaceFolder}/prolog",
+			"args": ["mushrooms.pro"],
+			"stopAtEntry": false,
+			"cwd": "/home/claude/Projects/CSVConv",
+			"environment": [{"name":"LD_LIBRARY_PATH", "value":"/home/claude/Projects/iProlog/lib"}],
 			"MIMode": "gdb",
 			"setupCommands": [
 				{

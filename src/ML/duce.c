@@ -11,7 +11,7 @@
 #define TRUNC(t, i)	(t - i - 1)
 
 
-typedef enum
+typedef enum operator
 {
 	INTER_CONSTRUCTION, INTRA_CONSTRUCTION, ABSORPTION, IDENTIFICATION,
 	DICHOTOMISATION, TRUNCATION
@@ -40,7 +40,7 @@ static term new_clause_set(void)
 		NEXT(rval) = NULL;
 		SUBSUMES(rval) = _nil;
 		CLASS(rval) = -1;
-		return(rval);
+		return rval;
 	}
 	return new_set(max_props/BITS_IN_WORD, hash_table);
 }
@@ -303,6 +303,7 @@ static void encode_theory(term goal, term *frame)
 	}
 
 	fprintf(stderr, "%6.2f seconds to encode clauses\n", get_time() - start_time);
+//	print_theory(theory);
 }
 
 
@@ -383,8 +384,14 @@ static term new_intersection(term p, term q, term *s)
 	{
 		for (; *s != NULL; s = &NEXT(*s))
 			if (set_eq(x, *s))
+//			if (set_contains(x, *s))
 			{
-				free_clause_set(x);
+/*				printf("\n-------\n");
+				print_set(x);
+				printf("\n");
+				print_set(*s);
+				printf("\n=======\n");
+*/				free_clause_set(x);
 				return (*s);
 			}
 
@@ -425,12 +432,16 @@ static term pairwise_intersections(void)
 	double start_time = get_time();
 
 	for (p = theory; p != NULL; p = NEXT(p))
+	{
 		for (q = NEXT(p); q != NULL; q = NEXT(q))
+		{
 			if ((x = new_intersection(p, q, &int_set)) != NULL)
 			{
 				subsumes(x, p);
 				subsumes(x, q);
 			}
+		}
+	}
 
 	fprintf(stderr, "%6.2lf seconds to compute intersections\n", get_time() - start_time);
 
@@ -557,9 +568,9 @@ static void absorption(term s)
 static void truncation(term s)
 {
 	CLASS(s) = CLASS(CAR(SUBSUMES(s)));
-	remove_from_theory(s);
 	*last = s;
 	last = &NEXT(s);
+	remove_from_theory(s);
 }
 
 
@@ -584,7 +595,7 @@ static void apply(term s)
 
 
 /************************************************************************/
-/*			     DUCE main routine				*/
+/*			   Initialise Hash Table			*/
 /************************************************************************/
 
 static bool set_hash_table_size(term goal, term *frame)

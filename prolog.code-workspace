@@ -27,5 +27,17 @@
                 {
                         "path": "examples"
                 }
-       ]
+],
+"settings": {
+        "files.associations": {
+                "*.h": "c",
+                "tuple": "c",
+                "mutex": "c",
+                "streambuf": "c",
+                "memory": "c",
+                "jacobi": "c",
+                "stdexcept": "c",
+                "core": "c"
+        }
+}
 }
