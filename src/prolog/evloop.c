@@ -85,6 +85,49 @@ term get_prompt()
 	return _prompt;
 }
 
+/************************************************************************/
+/*		Hook to call prove from outside Prolog			*/
+/************************************************************************/
+
+static void collect(term *result, term vars, term *frame)
+{
+	extern term varlist;
+
+ 	varlist = _nil;
+ 	nconc(result, hcons(make(vars, frame), _nil));
+}
+
+term pl_query(term question, term vars, int how_many)
+{
+	term x, *old_global = global;
+	env old_tos = top_of_stack;
+	jmp_buf local_env, *last_env;
+	term q[2] = {NULL, NULL};
+	term frame[count_vars(vars)];
+	term rval;
+
+	if (question == _nil)
+		return _false;
+	*q = question;
+
+	signal(SIGINT, interrupt);
+
+	last_env = ret_env;
+	ret_env = &local_env;
+
+	if (setjmp(local_env))
+	{
+		global = old_global;
+		top_of_stack = old_tos;
+		return _false;
+	}
+	else
+	{
+		rval = call_prove(q, frame, vars, how_many, collect, true);
+		return rval;
+	}
+}
+
 
 /************************************************************************/
 /*			The main read/execute/print loop		*/

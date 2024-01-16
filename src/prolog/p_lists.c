@@ -34,6 +34,18 @@ term hcons(term car, term cdr)
 	return rval;
 }
 
+/************************************************************************/
+/*		Destructively add y to the end of list x		*/
+/*		For internal use only. No checking!!!			*/
+/************************************************************************/
+
+void nconc(term *x, term y)
+{
+	while (*x != _nil)
+		x = &(CDR(*x));
+	*x = y;
+}
+
 
 /************************************************************************/
 /*  			Return head and tail of a list			*/

@@ -19,3 +19,5 @@ term make(term, term *);
 void check_last_clause(term);
 int count_vars(term);
 term cache_predicate(term);
+void reset_vars(void);
+term lookup_var(term);

@@ -9,6 +9,10 @@ extern term _is;
 
 term varlist;
 
+void reset_vars(void)
+{
+	varlist = _nil;
+}
 
 term new_var(int type, int offset, term name)
 {

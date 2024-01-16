@@ -219,6 +219,14 @@ term read_expr(int given)
 	return rval;
 }
 
+term pl_term(char *str)
+{
+	if (setjmp(start_env))
+		return _nil;
+	else
+		return read_expr_from_string(str);
+}
+
 
 term p_read(void)
 {

@@ -427,6 +427,7 @@ extern term 	_nil, _true, _false, _anon, _prompt, _prolog_prompt, _op,
 #include "lex.h"
 #include "read.h"
 #include "dcg.h"
+#include "string_io.h"
 
 #include "plist.h"
 
@@ -437,3 +438,12 @@ extern term 	_nil, _true, _false, _anon, _prompt, _prolog_prompt, _op,
 #include "p_system.h"
 #include "p_sockets.h"
 #include "p_unix.h"
+
+/************************************************************************/
+/*		For initialising from outside Prolog			*/
+/************************************************************************/
+
+extern void pl_init();
+
+#define ALL(V, Q)	pl_query(pl_term(Q), pl_term(V), -1)
+#define ONE(V, Q)	pl_query(pl_term(Q), pl_term(V), 1)

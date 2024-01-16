@@ -8,7 +8,7 @@
 /*	Initialise all modules. Must be called before anything else	*/
 /************************************************************************/
 
-static void pl_init(void)
+void pl_init(void)
 {
 	void	mem_init(), atom_init(), prove_init(), meta_init(),
 		file_init(), lists_init(), eval_init(), math_init(),
@@ -34,6 +34,8 @@ static void pl_init(void)
 	unix_init();
 	socket_init();
 	plist_init();
+
+	reset_vars();
 }
 
 

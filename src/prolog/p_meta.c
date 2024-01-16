@@ -1,3 +1,4 @@
+#include <setjmp.h>
 #include "prolog.h"
 
 static void succeed(term *result, term varlist, term *frame)
@@ -8,14 +9,6 @@ static void succeed(term *result, term varlist, term *frame)
 /************************************************************************/
 /*			Collect results in a bag			*/
 /************************************************************************/
-
-static void nconc(term *x, term y)
-{
-	while (*x != _nil)
-		x = &(CDR(*x));
-	*x = y;
-}
-
 
 static void collect(term *result, term vars, term *frame)
 {
@@ -139,7 +132,6 @@ static bool apply_clause(term goal, term *frame)
 	}
 	return (call_prove(BODY(cl), current_frame, _nil, 1, succeed, false) != _nil);
 }
-
 
 
 /************************************************************************/

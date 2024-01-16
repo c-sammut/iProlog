@@ -544,7 +544,7 @@ void directive(term question, term vars)
 /*			"Once" built-in predicate			*/
 /************************************************************************/
 
-static bool p_once(term goal, term * frame)
+static bool p_once(term goal, term *frame)
 {
 	term q[2] = {NULL, NULL};
 
